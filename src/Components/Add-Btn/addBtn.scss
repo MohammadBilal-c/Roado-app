@@ -1,0 +1,61 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+.list-title {
+  cursor: pointer;
+}
+.list-heading {
+  font-size: 25px;
+  font-weight: 500;
+}
+.btn {
+  // position: -webkit-sticky;
+  // position: sticky;
+  // position: fixed;
+  // left: 70%;
+  // padding: 10px;
+  // size: auto;
+  // font-size: 0;
+}
+
+.inputDiv {
+  text-align: center;
+  padding-top: 18%;
+}
+.addInput {
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  width: 100%;
+  height: 40px;
+  // padding-bottom: 20px;
+  // border-bottom: gray;
+}
+button {
+  background-color: white;
+  color: rgb(101, 101, 250);
+  border: white;
+  font-size: 25px;
+  // padding-top: 40px;
+  position: relative;
+  top: 40px;
+  cursor: pointer;
+}
+.btnCancle {
+  position: relative;
+  right: 50px;
+}
+.btnAdd {
+  position: relative;
+  left: 50px;
+  // right: 50px;
+}
+.addBtnMain {
+  position: -webkit-sticky;
+  position: sticky;
+  // position: fixed;
+  left: 70%;
+  padding: 10px;
+  size: auto;
+  font-size: 0;
+}

@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+.main-container {
+  padding: 20px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2);
+}
+.common-heading {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.list-title {
+  // padding-top: 20px;
+  // padding-bottom: 20px;
+  cursor: pointer;
+}
+.list-heading {
+  padding: 20px 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+.list-pera {
+  padding: 10px 0;
+}
+// button{
+//     width: 20px;
+// }
+.btn {
+  position: -webkit-sticky;
+  position: sticky;
+  position: fixed;
+  left: 70%;
+  padding: 10px;
+  size: auto;
+  font-size: 0;
+}
+.removeBtn {
+  position: relative;
+  left: 95%;
+  bottom: 0px;
+  background-color: white;
+  border: transparent;
+  color: black;
+}
+// .addBtnMain {
+//   position: sticky;
+// }

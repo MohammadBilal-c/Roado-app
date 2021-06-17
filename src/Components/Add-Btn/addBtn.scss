@@ -8,14 +8,8 @@ body {
   font-size: 25px;
   font-weight: 500;
 }
-.btn {
-  // position: -webkit-sticky;
-  // position: sticky;
-  // position: fixed;
-  // left: 70%;
-  // padding: 10px;
-  // size: auto;
-  // font-size: 0;
+.element.style {
+  height: 50% !important;
 }
 
 .inputDiv {
@@ -26,6 +20,8 @@ body {
   border-top: white;
   border-left: white;
   border-right: white;
+  // border-bottom: #570225;
+  // border-bottom: #570225;
   width: 100%;
   height: 40px;
   // padding-bottom: 20px;
@@ -33,9 +29,9 @@ body {
 }
 button {
   background-color: white;
-  color: rgb(101, 101, 250);
+  color: #570225;
   border: white;
-  font-size: 25px;
+  font-size: 20px;
   // padding-top: 40px;
   position: relative;
   top: 40px;
@@ -43,11 +39,11 @@ button {
 }
 .btnCancle {
   position: relative;
-  right: 50px;
+  right: -63px;
 }
 .btnAdd {
   position: relative;
-  left: 50px;
+  left: 90px;
   // right: 50px;
 }
 .addBtnMain {
@@ -59,4 +55,19 @@ button {
   size: auto;
   font-size: 0;
   top: 80%;
+}
+.MuiFab-primary {
+  background-color: #570225 !important;
+}
+.add-item {
+  position: relative;
+  font-weight: 500;
+  top: -28px;
+  left: -50px;
+}
+.add-heading {
+  font-weight: 250;
+  position: relative;
+  left: -110px;
+  color: #570225;
 }

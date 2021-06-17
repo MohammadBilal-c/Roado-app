@@ -6,6 +6,8 @@ import { Cancel } from '@material-ui/icons';
 
 import './addBtn.scss'
 
+// adding the new words in the list
+
 const AddBtn = () => {
     const [notes, setNotes] = useState([])
     const [title, setTitle] = useState('')
@@ -20,9 +22,12 @@ const AddBtn = () => {
             { title }
         ])
         setTitle('')
+
     }
 
     return (
+
+        //add the data in the list
         <div>
             {notes.map((note) => (
                 <div key={note.title} className='list-title'>
@@ -30,6 +35,7 @@ const AddBtn = () => {
                 </div>
 
             ))}
+
             <Modal
                 isOpen={modalIsOpen}
                 shouldCloseOnOverlayClick={false}
@@ -37,10 +43,12 @@ const AddBtn = () => {
             >
                 <div className='inputDiv'>
                     <form onSubmit={addNote}>
+                        <h2 className='add-item'>Add in Dictionary</h2>
+                        <h4 className='add-heading'>new word</h4>
                         <input className='addInput' value={title} onChange={(e) => setTitle(e.target.value)} />
                         <div>
                             <button className='btnCancle' onClick={() => setModalIsOpen(false)}>Cancel </button>
-                            <button className='btnAdd' >Add </button>
+                            <button className='btnAdd'  >Add </button>
                         </div>
 
                     </form>

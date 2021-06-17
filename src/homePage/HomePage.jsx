@@ -1,17 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Components/header/Header'
 import List from '../Components/List/List'
 import AddBtn from '../Components/Add-Btn/AddBtn'
 
-import axios from 'axios'
+import ImageList from '../Components/imageList/ImageList'
+
+import api from '../api/api'
+// import axios from 'axios'
 
 const HomePage = () => {
+
+    const [img, setImg] = useState([])
+
     const onSearchSubmit = async (term) => {
-        const respons = await axios.get('https://jsonplaceholder.typicode.com/comments')
+        const response = await api.get('/search/photos', {
+            params: { query: term },
+
+
+        })
+
+        setImg(response.data.results)
+
     }
     return (
         <>
             <Header onSubmit={onSearchSubmit} /><br />
+            <ImageList images={img} />
             <List />
             {/* <AddBtn /> */}
         </>

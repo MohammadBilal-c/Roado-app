@@ -51,11 +51,12 @@ button {
   // right: 50px;
 }
 .addBtnMain {
-  position: -webkit-sticky;
-  position: sticky;
+  // position: -webkit-sticky;
+  position: fixed;
   // position: fixed;
   left: 70%;
   padding: 10px;
   size: auto;
   font-size: 0;
+  top: 80%;
 }

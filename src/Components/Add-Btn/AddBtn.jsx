@@ -46,10 +46,11 @@ const AddBtn = () => {
                     </form>
                 </div>
             </Modal>
-
-            <Fab color="primary" aria-label="add" className='addBtn' onClick={() => setModalIsOpen(true)} className='addBtnMain'>
-                <AddIcon />
-            </Fab>
+            <div >
+                <Fab color="primary" aria-label="add" style={{ position: 'fixed' }} className='addBtn' onClick={() => setModalIsOpen(true)} className='addBtnMain'>
+                    <AddIcon />
+                </Fab>
+            </div>
         </div>
     )
 }

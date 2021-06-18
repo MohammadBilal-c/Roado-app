@@ -9,12 +9,13 @@ import './addBtn.scss'
 // adding the new words in the list
 
 const AddBtn = () => {
+    // passing states
     const [notes, setNotes] = useState([])
     const [title, setTitle] = useState('')
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
 
-
+    // add words logic
     const addNote = (e) => {
         e.preventDefault()
         setNotes([
